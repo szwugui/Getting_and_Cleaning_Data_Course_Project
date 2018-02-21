@@ -20,4 +20,4 @@ colnames(df_mean_sd) <- gsub('\\(\\)', '', cols_mean_sd)
 mean_data <- apply(df_mean_sd, 2, mean)
 
 ## write result data into a txt file
-write.table(mean_data, file = 'result_data.txt', row.names = F)
+write.table(mean_data, file = 'result_data.txt', col.names = F, row.names = F, quote = F)
